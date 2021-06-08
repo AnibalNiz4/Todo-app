@@ -1,0 +1,47 @@
+.input{
+    position: relative;
+    margin-bottom: 1rem;
+
+    .circle{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid $Very-Dark-Grayish-Blue;
+    }
+
+    .circle_light{
+        border: 1px solid $Light-Grayish-Blue;
+    }
+
+    .text{
+        font-family: 'Josefin Sans', sans-serif;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        height: 4.375rem;
+        font-weight: 400;
+        width: 100%;
+        border-radius: .5rem;
+        font-size: 1.125rem;
+        background: $Very-Dark-Desaturated-Blue;
+        color: $Light-Grayish-Blue;
+        padding: 0 1.875rem 0 4.0625rem;
+
+        &::placeholder{
+            color: $Dark-Grayish-Blue;
+        }
+    }
+
+    .text_light{
+        background: $Very-Light-Gray;
+        color: $Very-Dark-Desaturated-Blue;
+
+        &::placeholder{
+            color: $Dark-Grayish-Blue;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.dates_container{
+    div:first-child{
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .dates{
+        position: relative;
+        padding: 0 1.25rem;
+        height: 4.375rem;
+        background: $Very-Dark-Desaturated-Blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $Very-Dark-Grayish-Blue;
+        color: $Light-Grayish-Blue;
+    
+        .check{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            border: 1px solid $Very-Dark-Grayish-Blue;
+            cursor: pointer;
+    
+            &:hover{
+                border: 1px solid $Dark-Grayish-Blue;
+            }
+        }
+
+        .check_light{
+            border: 1px solid $Light-Grayish-Blue;
+
+            &:hover{
+                border: 1px solid $Bright-Blue;
+            }
+        }
+
+        .bkg_null{
+            background: transparent;
+        }
+
+        .bkg_style{
+            position: relative;
+            background: url(/scss/images/icon-check.svg), linear-gradient(to right bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .date_p{
+            cursor: grabbing;
+            text-align: left;
+            width: 89%;
+            overflow: hidden;
+
+            @media (max-width: 900px){
+                width: 85%;
+            }
+
+            @media (max-width: 500px){
+                width: 70%;
+            }
+
+            &.date_italic{
+                text-decoration: line-through;
+                opacity: .5;
+            }
+        }
+    
+        .cross{
+            cursor: pointer;
+            transition: transform .3s;
+    
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    
+    }
+
+    .dates_light{
+        background: $Very-Light-Gray;
+        color: $Very-Dark-Desaturated-Blue;
+        border-bottom: 1px solid $Light-Grayish-Blue;
+
+        .bkg_null{
+            background: transparent;
+            border: 1px solid $Light-Grayish-Blue;
+        }
+    }
+
+}

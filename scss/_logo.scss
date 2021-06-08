@@ -1,0 +1,22 @@
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    h1{
+        letter-spacing: 1rem;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    div{
+        .change_design.sun{
+            height: 2rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

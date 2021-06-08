@@ -1,0 +1,60 @@
+@import "variables";
+@import "logo";
+@import "input";
+@import "dates";
+@import "actions";
+
+html{
+    min-height: 100vh;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(22, 23, 34);
+}
+
+.background{
+    height: 19rem;
+    background: url(/scss/images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 500px){
+        background: url(/scss/images/bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.background_light{
+    background-image: url(/scss/images/bg-desktop-light.jpg);
+
+    @media (max-width: 500px){
+        background: url(/scss/images/bg-mobile-light.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 3.125rem 0;
+    width: 50rem;
+    text-align: center;
+
+    @media (max-width: 900px){
+        width: 90%;
+    }
+}
+
+.final_text{
+    color: $Dark-Grayish-Blue;
+}
